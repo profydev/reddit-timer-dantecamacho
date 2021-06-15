@@ -1,25 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Wrapper from '../../Components/styles/styles';
+import { Route } from 'react-router-dom';
+import Header from '../../Components/Header/Header';
+import Search from '../search/Search';
+import About from '../about/About';
+import HowItWorks from '../how-it-works/HowItWorks';
 
 function App() {
   return (
-
-    <Wrapper>
-      <div>
-        App Placeholder
-      </div>
-      <Link to="/search">
-        Search
-      </Link>
-      <Link to="/how-it-works">
-        How it works
-      </Link>
-      <Link to="/about">
-        About
-      </Link>
-
-    </Wrapper>
+    <>
+      <Header />
+      <Route path={['/search']} component={Search} />
+      <Route path={['/about']} component={About} />
+      <Route path={['/how-it-works']} component={HowItWorks} />
+    </>
   );
 }
 
