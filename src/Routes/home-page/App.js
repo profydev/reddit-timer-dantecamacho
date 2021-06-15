@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <Header />
-      <Route path={['/search']} component={Search} />
-      <Route path={['/about']} component={About} />
-      <Route path={['/how-it-works']} component={HowItWorks} />
+      <Route path="/search" component={Search} />
+      <Route path="/about" component={About} />
+      <Route path="/how-it-works" component={HowItWorks} />
     </>
   );
 }
