@@ -4,6 +4,7 @@ import Wrapper from '../../Components/styles/styles';
 
 function App() {
   return (
+
     <Wrapper>
       <div>
         App Placeholder
